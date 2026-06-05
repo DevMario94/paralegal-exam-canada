@@ -1,0 +1,29 @@
+{
+  "name": "paralegal-exam-canada",
+  "version": "1.0.0",
+  "description": "Paralegal Exam Canada — Pan-Canadian Legal Knowledge Study App",
+  "author": "Paralegal Exam Canada",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "prebuild": "npm run inline-react",
+    "inline-react": "node scripts/inline-react.js",
+    "build": "node scripts/inline-react.js",
+    "ios": "npx cap sync ios && npx cap open ios",
+    "sync": "npx cap sync",
+    "open:ios": "npx cap open ios"
+  },
+  "dependencies": {
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/ios": "^6.0.0",
+    "@capacitor/splash-screen": "^6.0.0",
+    "@capacitor/status-bar": "^6.0.0",
+    "@capacitor/haptics": "^6.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.0.0",
+    "@capacitor/assets": "^3.0.0"
+  }
+}
